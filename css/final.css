@@ -476,6 +476,10 @@ footer {
     display: none;
     color: black;
   }
+  h2.typewriter {
+    white-space: normal;
+    max-width: 100%;
+  }
   .topnav a.icon {
     float: right;
     display: inline-block;
