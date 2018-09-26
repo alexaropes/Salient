@@ -1,0 +1,514 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: 'roboto', sans-serif;
+  font-weight: 900i;
+  text-decoration: none;
+  z-index:-100;
+}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  margin: 0; /* removes default space */
+  color:white;
+  font-size: 2.2rem;
+  font-weight: 900;
+  font-style: italic;
+  width: 70%;
+  margin-left: 15%;
+}
+h2 {
+  margin: 0; /* removes default space */
+  font-family: 'roboto+condensed', sans-serif;
+  font-size: 2em;
+  color:white;
+  letter-spacing: .15em; /* Adjust as needed */
+  text-rendering: optimizeLegibility;
+}
+h2.middle {
+  text-align:center;
+  color: black;
+
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* removes default bold styles */
+  margin: 0; /* removes default space */
+  color: #000;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border-bottom: grey solid 2px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
+#nav:hover {
+  border-bottom: 5px solid red;
+  padding:-1.1em;
+}
+#press-img {
+  filter:grayscale(100%);
+}
+#press-img:hover {
+  filter:grayscale(0%);
+}
+a.readmore {
+  font-weight: 500;
+}
+a.readmore:hover{
+  color: #ffc802ff;
+}
+.arrow {
+  vertical-align: middle;
+  width: 20px;
+ padding-left: 0.5em;
+}
+p.center {
+  text-align: center;
+}
+p a {
+  text-decoration: none;
+  color:inherit;
+  font-size: inherit;
+}
+p.one {
+  font-size: 1em;
+  color: black;
+  margin: 0.3em;
+  text-decoration: none !important;
+
+}
+p.two {
+  text-decoration: none;
+  font-size: 120%
+  color: #2A437A;
+}
+header,
+main, {
+  padding: 20px 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.highlight {
+  color: #ffffff;
+}
+
+
+/* HEADER STYLES
+-----------------------------------------*/
+header h1 {
+  font-size: 48px;
+  font-weight: 300;
+}
+header h2 {
+  font-size: 24px;
+  font-weight: 100;
+}
+header {
+  float: left;
+  margin: 10px;
+}
+
+/* Text Styles */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/* INDEX STYLES
+-----------------------------------------*/
+.landingpage {
+    background-image: url("../images/bg2.jpg");
+    background-size:cover;
+    filter: brightness(100%);
+    position: relative;
+    min-height:100vh;
+    width: 100%;
+    z-index: -100;
+    vertical-align: middle;
+}
+
+.left-text {
+    position: absolute;
+    width: 60%;
+    top: 35%;
+    color: white;
+    left: 5%;
+    left-margin: auto;
+ }
+p.index-overlay-text {
+    font-family: 'roboto+condensed', sans-serif;
+    font-size: 2em;
+    animation: 3s fadeIn;
+}
+h2.typewriter  {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid red; /* The typwriter cursor */
+  white-space:nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  text-rendering: optimizeLegibility;
+    animation: typewriter 2s steps(44) 1s 1 normal both,
+               blinkTextCursor .8s steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 20em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: red;}
+    to{border-right-color: transparent;}
+  }
+.learnmore {
+    background-image: url("../images/salient-bg.png");
+    padding: 3em;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+button.x {
+  border: 3px solid white;
+  background: transparent;
+  padding: 1em;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1em;
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+
+}
+button:hover {
+  background: white;
+  color: red;
+}
+/* PRESS GRID
+-----------------------------------------*/
+ul{
+  width:100%;
+  max-width: 700px;
+  margin-bottom:20px;
+  overflow:hidden;
+}
+li{
+  line-height:1.5em;
+  float:left;
+  display:inline;
+
+}
+#double li  { width:50%;}
+
+.press {
+  padding-top:15%;
+  padding-bottom: 15%;
+  margin: 5%;
+  border-bottom: 5px solid red;
+}
+.press-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-gap: 3rem;
+    margin-left:auto;
+    margin-right:auto;
+
+
+}
+.story {
+    display: flex;
+    flex-direction: column;
+
+}
+#press-text {
+  font-size:1.6em;
+  font-weight:500;
+}
+#press-text:hover {
+  color:red;
+}
+#press-txt {
+  font-family: 'roboto Condensed', sans-serif;
+  font-size:1.1em;
+  font-weight:300;
+}
+
+/* TECHNOLOGY PAGE
+-----------------------------------------*/
+.technologyinfo {
+  margin: 4em;
+  width:80%;
+  text-align: justify;
+  margin-left:auto;
+  margin-right:auto;
+  border-bottom: 5px solid red;
+  animation: 3s fadeIn;
+}
+.landingpage-tech {
+    background-image: url("../images/bg4.jpg");
+    background-size:cover;
+    background-position:center;
+    position: relative;
+    min-height:30vh;
+    width: 100%;
+    z-index: -100;
+    vertical-align: middle;
+}
+/* FOOTER STYLES
+-----------------------------------------*/
+.landingpage-team{
+      background-image: url("../images/lab.jpg");
+      background-size:cover;
+      filter: grayscale(100%);
+      position: relative;
+      min-height:30vh;
+      width: 100%;
+      z-index: -100;
+      vertical-align: middle;
+}
+.teamsec {
+  padding-top:1%;
+  padding-bottom: 6%;
+  margin: 5%;
+    border-bottom: 5px solid red;
+    animation: 3s fadeIn;
+}
+.team {
+    filter:grayscale(100%);
+}
+.team:hover{
+  filter:grayscale(0%)
+}
+.team-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-left:auto;
+    margin-right:auto;
+}
+#teamtxt{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin:0.1em;
+  font-size:1.4em;
+    text-transform: uppercase;
+}
+#des{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin:0.1em;
+  font-size:1em;
+
+}
+#contactlink {
+  font-weight: 700;
+}
+#contactlink:hover {
+  font-style: italic;
+}
+/* CONTACT  STYLES
+-----------------------------------------*/
+/* Style inputs with type="text", select elements and textareas */
+.contact-landing {
+    background-image: url("../images/bg5.jpg");
+    background-size:cover;
+    background-position:center;
+    position: relative;
+    min-height:30vh;
+    width: 100%;
+    z-index: -100;
+    vertical-align: middle;
+}
+
+.contact-form {
+  width:40%;
+  margin: 3em;
+  font-family: 'roboto', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  animation: 3s fadeIn;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+
+    vertical-align: text-top;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  border: 3px solid red;
+  background: transparent;
+  padding: .5em;
+  text-transform: uppercase;
+  color: red;
+  font-size: 1em;
+  font-weight: 700;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background: red;
+  color: white;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* FOOTER STYLES
+-----------------------------------------*/
+/* Sticky Footer - http://css-tricks.com/snippets/css/sticky-footer */
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -100px; /* must be the same height as footer */
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+footer,
+.page-wrap:after {
+  height: 100px;
+ /* however tall you want the footer to be */
+}
+footer {
+  background: white;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: 'roboto Condensed', sans-serif;
+  font-weight: 300;
+  color:black;
+  padding-bottom: 2em;
+    width:100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Mobile */
+/* Add a black background color to the top navigation */
+
+.logo {
+  float: left;
+  max-width: 200px;
+  object-fit: scale-down;
+  padding-top: .3em;
+  padding-left: 15%;
+}
+
+.clear {
+  clear: both;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    position:absolute;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    text-align: center;
+    display: inline-block;
+    padding: 0.9em 1em;
+    text-decoration: none;
+    font-size: 1.2em;
+    float: right;
+    margin-right: 3em;
+    font-family: 'roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+    z-index: 100;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 750px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+    color: black;
+  }
+  .topnav a.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+.topnav a:first-child {
+      color: white;
+      float: left;
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon a.pic {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    background: white;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: black;
+    color: black;
+  }
+}
+.topnav a.pic {
+  padding: 0px;
+}
